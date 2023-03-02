@@ -1,0 +1,28 @@
+GAME IMAGE
+
+PROGRAM VERSIONS
+    Windows 11
+    Python 3.10.0
+    pygame 2.1.2
+
+MOTIVATION
+    I chose to make a platformer-esque game. In most 2D games with an obvious player character, you can either have a top-down view or a side view. Personally, I've always found the movement in 2D games with a side view to be very engaging and more fun than top-down games. With choosing a side view perspective, jumping and falling is vital to navigate your environment and really focusing on that mechanic is important since players engage a lot with that movement. I also added a pretty simple way to create the environment by entering rectangle dimensions, color, and position in a text file which is then read in when the model initializes. 
+
+REASONING
+    I tried to follow the MVC formula as much as possible when designing. In my Model I have the level design information, control for routine actions(such as physics) that must be performed on entities, the player character, and a list containing all existing entities. Some of these could have been put in the controller, but i felt like they fit better in the Model since they change and store information from the other modules.
+    In my Contoller, I only have my player input, however, I would likely also put any events to run or have non-player characters movement logic.
+    In my View, I draw everything to the screen. First, the platforms are drawn so that they appear behind other things on the screen. I then blit entities and then the player. So the player appears in front of other entities, then the entities appear infront of the environment objects.
+
+RELATIONSHIP IMAGE
+
+
+FUTURE WORK
+    There are many things I could improve/work on next. To start, I'd like for the model to have more control and tracking ability over the entities. This would allow me to dynamically create and remove entities much easier. I would also like to add different environment elements/interactions, such as area triggers, unique platform properties, and layers to control which order platforms would be drawn in (such as bushes appearing in front of the player so they could hide). The ability to use sprites for the environment would be ideal, possibly implementing a tiling system to the level so that level building would be easier. Also implementing a way to switch levels/stages would be ideal for expanding on the model. 
+
+    In my Objects file, I would like to add more types of entities, such as projectiles, npcs, and powerups. They are definitely more variables I would need to keep track of for different entities, such as whether they are static, have collision with the environment, whether they interact with other entities, etc.
+
+    For my Controller, implementing logic for npcs or other features would be my next addition. 
+
+    In my View, adding some GUI to display over top the environment would be my next step along with organizing things to draw into distinct layers. I would also aim to have the camera follow the player character instead of be a static view of the environment. That might help with any performance issues as we wouldn't need to render or possibly even perform logic on things outside of the player's view.
+
+    With the features I have mentioned above, you have the basics to create a wide range of 2D games like platformers, metroidvanias, puzzle games, and more. It would not be ideal for games without a player-controller character that interacts with an environment,                                         
