@@ -1,4 +1,10 @@
 GAME IMAGE
+![image](.\"documentation images"\"Project 1 Just Started")
+
+HOW TO:
+    In the terminal run "python .\Project1Game.py"
+    Control the player using WASD
+    Press 'E' to shoot projectiles.
 
 PROGRAM VERSIONS
     Windows 11
@@ -25,4 +31,14 @@ FUTURE WORK
 
     In my View, adding some GUI to display over top the environment would be my next step along with organizing things to draw into distinct layers. I would also aim to have the camera follow the player character instead of be a static view of the environment. That might help with any performance issues as we wouldn't need to render or possibly even perform logic on things outside of the player's view.
 
-    With the features I have mentioned above, you have the basics to create a wide range of 2D games like platformers, metroidvanias, puzzle games, and more. It would not be ideal for games without a player-controller character that interacts with an environment,                                         
+    With the features I have mentioned above, you have the basics to create a wide range of 2D games like platformers, metroidvanias, puzzle games, and more. It would not be ideal for games without a player-controller character that interacts with an environment.
+    
+KNOWN ISSUES
+    First of all, its not very "gamey." My intention was to get familiar with the concepts of using the MVC formula and make a program that would easily be able to be made into a game.
+    Listed below are some actual issues I would've liked to address but that I felt were lower priority :
+    - projectiles do not despawn
+    - projectile collision is being calculated using the same hitbox size as the player sprite(16x16)
+    - collisions occasionally teleport to the top of the object they collided with
+    - the player can jump off of the edge of the map
+    - the player "stutters" when walking into a wall
+    - collision is not based on sprite size but rather a predecided hitbox size

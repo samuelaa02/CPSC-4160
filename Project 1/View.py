@@ -1,6 +1,6 @@
 import pygame, sys, Model
 
-BACKGROUND_COLOR = 0x006060
+BACKGROUND_COLOR = 0x9cb4bc
 
 class View:
 
