@@ -1,5 +1,5 @@
 GAME IMAGE
-![image](.\"documentation images"\"Project 1 Just Started")
+(all images located in "documentation images" folder)
 
 HOW TO:
     In the terminal run "python .\Project1Game.py"
@@ -20,6 +20,7 @@ REASONING
     In my View, I draw everything to the screen. First, the platforms are drawn so that they appear behind other things on the screen. I then blit entities and then the player. So the player appears in front of other entities, then the entities appear infront of the environment objects.
 
 RELATIONSHIP IMAGE
+(all images located in "documentation images" folder)
 
 
 FUTURE WORK

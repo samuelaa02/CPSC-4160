@@ -15,7 +15,6 @@ class Model:
         self.existingEntities = []
         self.player = Objects.Player(PLAYER_SPRITE, 60, 0)
         self.stage = Level(LEVEL)
-        self.gamespeed = 0.0
 
 
     def updateGameState(self, gametime):
